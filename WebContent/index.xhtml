@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<h:form>
+		<h:panelGrid columns="2" border="1">
+			<h:outputText value="Modelo de Fone: "/>
+			<h:inputText value="#{foneDeOuvidoBean.fone.modelo}"/>
+			<h:outputText value="Marca de Fone: "/>
+			<h:inputText value="#{foneDeOuvidoBean.fone.marca}"/>
+			<h:commandButton value="Salvar" action="#{foneDeOuvidoBean.salvar}"/>
+			<h:commandButton value="Listar Dados Salvos" action="#{foneDeOuvidoBean.listarDb}"/>
+		</h:panelGrid>
+	</h:form>
+	
+</html>
